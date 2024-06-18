@@ -1,0 +1,30 @@
+.abc {
+  color: red;
+}
+.first {
+  color: white;
+}
+.second {
+  font-size: larger;
+}
+.third {
+  background-color: #00b4d8;
+}
+.firs {
+  color: #dad7cd;
+}
+.secon {
+  background-color: #344e41;
+}
+#ch {
+  background-color: #fb6f92;
+  color: #ffe5ec;
+}
+p.ch:hover {
+  background-color: grey;
+  color: black;
+}
+h2 {
+  font-size: 40px;
+  text-shadow: 2px 4px 3px gray;
+}

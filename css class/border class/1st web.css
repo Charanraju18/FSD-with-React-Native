@@ -1,0 +1,42 @@
+.mydiv2 {
+  font-size: 30px;
+  margin: 15px;
+  border-radius: 30px;
+  border: 3px solid cadetblue;
+  height: 120px;
+  min-width: 746px;
+  background-color: aqua;
+}
+.mydiv2:hover {
+  box-shadow: 10px 10px 7px rgb(128, 160, 161);
+}
+a {
+  text-decoration: none;
+  color: rgb(187, 26, 126);
+  align-content: flex-end;
+}
+a:hover {
+  color: blue;
+}
+a:active {
+  color: black;
+}
+img {
+  padding: 13px;
+  border-radius: 30px;
+  width: 90px;
+  float: inline-start;
+}
+.navbar {
+  padding-top: 45px;
+  float: right;
+}
+.web {
+  float: left;
+  padding-top: 45px;
+  padding-left: 5px;
+}
+body {
+  margin: 0px;
+  display: block;
+}

@@ -1,0 +1,15 @@
+.parent {
+  height: 100px;
+  width: 100px;
+  border: 2px solid black;
+  background-color: aqua;
+  position: fixed;
+}
+.child {
+  height: 100px;
+  width: 100px;
+  border: 2px solid black;
+  background-color: aquamarine;
+  position: sticky;
+  top: 20px;
+}
