@@ -1,0 +1,7 @@
+table,tr,td{
+	border: 2px solid black;
+	border-collapse: collapse;
+}
+table:first-child{
+	background-color: red;
+}
