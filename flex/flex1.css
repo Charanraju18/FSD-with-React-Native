@@ -1,0 +1,40 @@
+*{
+	padding: 0;
+	margin: 0;
+}.parent{
+	width: 100%;
+	height: 100svh;
+	background-color: blue;
+	display: flex;
+	/*border: 2px solid black;
+	flex-direction: row;
+	flex-wrap: wrap; */
+}
+.child{
+	width: 150px;
+	height: 150px;
+	background-color: yellow;
+	border: 2px solid black;
+	font-size: 50px;
+}
+.child1{
+	width: 150px;
+	height: 150px;
+	background-color: yellow;
+	border: 2px solid black;
+	font-size: 50px;
+}
+.rem{
+	display: flex;
+	justify-content: flex-end;
+	align-content: start;
+	width: 450px;
+	position: relative;
+	left: 930px;
+}
+.one{
+	display: flex;
+	justify-content: flex-start;
+	align-content: start;
+	display: inline-block;
+}

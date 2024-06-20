@@ -1,0 +1,40 @@
+.parent{
+	position: relative;
+	cursor: pointer;
+}
+.child1{
+	position: absolute;
+	height: fit-content;
+	width: fit-content;
+	border: 2px solid red;
+	font-size: 30px;
+	display: inline-block;
+	background-color: aquamarine;
+}
+.child2{
+ font-size: 20px;
+ border: 1px solid black;
+ height: fit-content;
+ width: fit-content;
+ position: absolute;
+ display: none;
+ top: 37px;
+}
+.parent:hover .child2{
+	display: block;
+}
+.parent:hover .child1{
+	background-color: white;
+	color: black;
+	border: 2px solid grey;
+}
+.op{
+	padding: 20px;
+	border: 2px solid black;
+}
+.op:hover{
+	background-color: rgb(96, 55, 55);
+	border: 2px solid black;
+	color: white;
+	box-shadow: 0px 0px 5px 5px grey;
+}
