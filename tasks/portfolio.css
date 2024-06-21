@@ -83,7 +83,7 @@ height: 80%;
 	background-color: white;
 	position: relative;
 	display: flex;
-	justify-content: center;
+	/* justify-content: center; */
 	border-radius: 5px;
 	box-shadow: 0px 0px 10px 0px #e0e1e7;
 }
@@ -199,6 +199,9 @@ height: 80%;
 	/* border-radius: 50%; */
 	position: absolute;
 	top: 3%;
+	left: 31%;
+	/* align-items: center;
+	align-content: center; */
 }
 .image img{
 	height: 105px;
@@ -206,6 +209,8 @@ height: 80%;
 	position: absolute;
 	border: 2px solid black;
 	border-radius: 50%;
+	/* align-items: center;
+	align-content: center; */
 }
 #name{
 	width: 100%;
@@ -270,41 +275,177 @@ border-radius: 5px;
 	text-align: center;
 	font-weight: lighter;
 }
-#website{
+.icons{
 	position: absolute;
-	width: 100%;
+	width: 20%;
 	height: 5%;
+	/* background-color: pink; */
+	font-size: 125%;
+	display: inline-block;
+	left: 25%;
+}
+#website{
+	width: 30%;
+	height: 5%;
+	/* background-color: pink; */
+	position: absolute;
 	top: 63%;
-	text-align: center;
-	color: black;
-	/* background-color: black; */
+	left: 45%;
+	align-content: center;
 	font-size: 125%;
 }
 #github{
-	position: absolute;
-	width: 100%;
+	width: 30%;
 	height: 5%;
+	/* background-color: pink; */
+	position: absolute;
 	top: 70%;
-	background-color: black;
+	left: 45%;
+	align-content: center;
+	font-size: 125%;
 }
 #twitter{
-	position: absolute;
-	width: 100%;
+	width: 30%;
 	height: 5%;
+	/* background-color: pink; */
+	position: absolute;
 	top: 77%;
-	background-color: black;
+	left: 45%;	align-content: center;
+	font-size: 125%;
 }
 #insta{
-	position: absolute;
-	width: 100%;
+	width:	30%;
 	height: 5%;
+	/* background-color: pink; */
+	position: absolute;
 	top: 84%;
-	background-color: black;
+	left: 45%;
+		align-content: center;
+	font-size: 125%;
 }
 #fb{
-	position: absolute;
-	width: 100%;
+	width: 30%;
 	height: 5%;
+	/* background-color: pink; */
+	position: absolute;
 	top: 91%;
-	background-color: black;
+	left: 45%;
+	align-content: center;
+	font-size: 125%;
+}
+a{
+	text-decoration: none;
+	color: black;
+}
+.pre:hover{
+	cursor: pointer;
+}
+.html:hover{
+	cursor: pointer;
+}
+.css:hover{
+	cursor: pointer;
+}
+.download:hover{
+	cursor: pointer;
+}
+.action:hover{
+	cursor: pointer;
+}
+.project_stats{
+	font-size: 125%;
+	font-weight: 600;
+	position: absolute;
+}
+.web_design{
+	position: absolute;
+	padding-left: 3%;
+	top: 20%;
+	left: -.08%;
+	width: 97%;
+	height: 15%;
+	font-size: 70%;
+	font-weight: lighter;
+	/* background-color: pink; */
+}
+.bar_container{
+	position: absolute;
+	width: 90%;
+	height: 15%;
+	top: 50%;
+	background-color: #e5ebf1;
+}
+.bar1{
+	position: absolute;
+	height: 100%;
+	width: 80%;
+	background-color: #76b9e9;
+}
+.web_markup{
+	font-weight: lighter;
+	position: absolute;
+	padding-left: 3%;
+	top: 36%;
+	left: -.08%;
+	width: 97%;
+	height: 15%;
+	font-size: 70%;
+	/* background-color: pink; */
+}
+.bar2{
+	position: absolute;
+	height: 100%;
+	width: 75%;
+	background-color: #d13d4e;
+}
+.one_page{
+	font-weight: lighter;
+	position: absolute;
+	padding-left: 3%;
+	top: 52%;
+	left: -.08%;
+	width: 97%;
+	height: 15%;
+	font-size: 70%;
+	/* background-color: pink; */
+}
+.bar3{
+	position: absolute;
+	height: 100%;
+	width: 90%;
+	background-color: #27a645;
+}
+.mob_template{
+	font-weight: lighter;
+	position: absolute;
+	padding-left: 3%;
+	top: 68%;
+	left: -.08%;
+	width: 97%;
+	height: 15%;
+	font-size: 70%;
+	/* background-color: pink; */
+}
+.bar4{
+	position: absolute;
+	height: 100%;
+	width: 60%;
+	background-color: #fabf14;
+}
+.backend_api{
+	font-weight: lighter;
+	position: absolute;
+	padding-left: 3%;
+	top: 84%;
+	left: -.08%;
+	width: 97%;
+	height: 15%;
+	font-size: 70%;
+	/* background-color: pink; */
+}
+.bar5{
+	position: absolute;
+	height: 100%;
+	width: 70%;
+	background-color: #239cae;
 }
