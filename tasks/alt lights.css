@@ -1,5 +1,6 @@
 body{
 	width: 100%;
+	min-width: 500px;
 	height: 100svh;
 	background-color: #EEE9E7;
 	display: flex;
@@ -61,4 +62,4 @@ body{
 }
 .product:hover .strip{
 	background-color: #C30000;
-  }
+}

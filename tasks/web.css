@@ -1,0 +1,312 @@
+*{
+padding: 0;
+margin: 0;
+}.background{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 200svh;
+	position: relative;
+}
+.parent1{
+	width: 100%;
+	height: 50%;
+	background-image: linear-gradient(to top right,#115479,#81CEC6);
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	position: relative;
+	/* justify-content: center; */
+}
+.header{
+	width: 100%;
+	height: 10%;
+	/* background-color: black; */
+	display: flex;
+}
+.logo{
+	width: 20%;
+	height: 100%;
+	/* background-color: white; */
+	position: relative;
+	text-align: center;
+	align-content: center;
+	font-size: 25px;
+	font-family: 'Roboto',sans-serif;
+}
+.copy{
+	width: 10%;
+	height: 30%;
+	position: absolute;
+	border: 3px solid black;
+	top: 25%;
+	left:25%;
+	box-shadow: 10px 6px black;
+	border-radius: 5px;
+}
+.navbar{
+	width: 60%;
+	height: 100%;
+	/* background-color: pink; */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.nav{
+	margin: 3.5%;
+	font-family: 'Roboto',sans-serif;
+}
+.profile{
+	width: 20%;
+	height: 100%;
+	/* display: flex;
+	justify-content: flex-end; */
+	position: relative;
+	/* background-color: black; */
+}
+/* .profile:hover{
+	cursor: pointer;
+} */
+.login{
+	position: absolute;
+	align-content: center;
+	right: 20%;
+	height: 80%;
+	top: 10%;
+	width: 20%;
+	background-color: white;
+	border-radius: 50%;
+	font-size: 250%;
+	text-align: center;
+	box-shadow: 0px 0px 20px 0px rgb(193, 192, 192);
+}
+.login:hover{
+	cursor: pointer;
+}
+.quote{
+	top: 25%;
+	position: absolute;
+	text-align: center;
+	font-size: 400%;
+	color: white;
+	left: 34.5416%;
+	/*  */
+}
+#p{
+	line-height: 40px;
+	top: 10%;
+	font-size: 40%;
+	color: #195974;
+}
+.search_bar{
+	height: 8%;
+	width: 50%;
+	background-color: white;
+	position: absolute;
+	left: 29%;
+	top: 45%;
+	border-radius: 50px;
+	font-size: 175% ;
+	padding-top: 1.2%;
+	font-family: 'roboto', sans-serif;
+	color: grey;
+	/* align-self: center; */
+}
+.search_bar i{
+	position: absolute;
+	left: 3%;
+	top: 30%;
+}
+button{
+	width: 20%;
+	height: 85%;
+	top: 8%;
+	right: 10px;
+	background-color: #82CFC7;
+	position: absolute;
+	border-radius: 50px;
+	text-align: center;
+	align-content: center;
+	color: white;
+	font-size: 30px;
+	outline: none;
+	border: none;
+}
+button:hover{
+	cursor: pointer;
+}
+.parent2{
+	width: 100%;
+	height: 50%;
+	background-color: #82CFC7;
+	border-bottom-left-radius: 50px;
+	border-bottom-right-radius: 50px;
+	display: flex;
+	position: relative;
+}
+.web_design{
+	position: absolute;
+	top: -25%;
+	width: 22%;
+	height: 62%;
+	background-color: white;
+	border-radius: 20px;
+	left: 13%;
+	font-family: 'roboto', sans-serif;
+	padding: 2%;
+}
+.strip1{
+	height: 30px;
+	width: 30px;
+	background-color: #00B0FE;
+	position: absolute;
+	right: 30px;
+	top: 35px;
+	border-radius: 5px;
+	font-size: 20px;
+	text-align: center;
+	align-content: center;
+	color: white;
+}
+.back{
+	height: 40%;
+	width: 87%;
+	bottom: 10%;
+	background-image: url(./undraw_Remote_design_team_re_urdx.png);
+	background-size: cover;
+	position: absolute;
+	/* background-color: black; */
+}
+input,input::placeholder {
+    font: 1.35rem/3 sans-serif;
+	background-color: transparent;
+	border: none;
+	outline: none;
+}
+.input_s{
+	height: 100%;
+	width: 71%;
+	/* background-color: black; */
+	position: absolute;
+	top: 0;
+	left: 7%;
+}
+.input{
+	width: 95%;
+	height: 65%;
+	top: 15%;
+	left: 3%;
+	position: absolute;
+	border-radius: 40px;
+}
+.finance{
+	position: absolute;
+	width: 40%;
+	height: 62%;
+	/* background-color: white; */
+	border-radius: 20px;
+	top: -25%;
+	right: 10%;
+	background-image: url(https://www.exactsales.com.br/wp-content/uploads/elementor/thumbs/post_blog_analise_concorrencia-qfidqoit7t1rpu37yutsn5fyvppgtiggxw47fupfwk.webp);
+	background-size: cover;
+	color: white;
+	font-family: 'roboto', sans-serif;
+	padding: 2%;
+	/* background-repeat: no-repeat; */
+}
+.strip2{
+	height: 30px;
+	width: 30px;
+	background-color: #4F6FF9;
+	position: absolute;
+	right: 30px;
+	top: 35px;
+	border-radius: 5px;
+	font-size: 20px;
+	text-align: center;
+	align-content: center;
+	color: white;
+}
+/* button{
+	height: ;
+	width: ;
+} */
+#web_p{
+	color: grey;
+	font-size: 140%;
+}
+#finance_p{
+	color: #EBFCFD;
+	font-size: 140%;
+}
+.learn{
+	height: 9%;
+	width: 18%;
+	background-color: #7FD0C7;
+	color: white;
+	position: absolute;
+	top: 45%;
+	text-align: center;
+	align-content: center;
+	font-size: 140%;
+	border-radius: 50px;
+}
+.share{
+	height: 25%;
+	width: 95%;
+	/* background-color: black; */
+	bottom: 0;
+	position: absolute;
+	left: 5%;
+	/* text-align: center; */
+	align-content: center;
+	font-size: 25px;
+}
+#x{
+	height: 40px;
+	width: 40px;
+	background-color: #7FD1C9;
+	position: absolute;
+	top: 30%;
+	left: 13%;
+	align-content: center;
+	text-align: center;
+	font-size: 20px;
+	border-radius: 50%;
+}
+#fb{
+	height: 40px;
+	width: 40px;
+	background-color: #7FD1C9;
+	position: absolute;
+	top: 30%;
+	left: 23%;
+	align-content: center;
+	text-align: center;
+	font-size: 20px;
+	border-radius: 50%;
+}
+#pin{
+	height: 40px;
+	width: 40px;
+	background-color: #7FD1C9;
+	position: absolute;
+	top: 30%;
+	left: 33%;
+	align-content: center;
+	text-align: center;
+	font-size: 20px;
+	border-radius: 50%;
+}
+#save{
+	height: 40px;
+	width: 40px;
+	/* background-color: #7FD1C9; */
+	position: absolute;
+	top: 30%;
+	right: 5%;
+	align-content: center;
+	text-align: center;
+	font-size: 20px;
+	border-radius: 50%;
+}

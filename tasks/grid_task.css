@@ -12,7 +12,7 @@ body{
 	/* background-color: orange; */
 	display: grid;
 	grid-template-rows: 1fr;
-	grid-template-columns: 14fr 1fr;
+	grid-template-columns: 14fr 1.02fr;
 }
 .parent2{
 	width: 100%;
@@ -20,7 +20,7 @@ body{
 	/* background-color: red; */
 	display: grid;
 	grid-template-rows: 1fr 2fr;
-	grid-template-columns: 1fr 12fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-template-columns: 1fr 12fr 1fr 1fr 1fr 1fr 1fr 1.35fr;
 }
 .parent3{
 	width: 100%;
@@ -30,20 +30,15 @@ body{
 	grid-template-rows: 1fr 1fr 1fr 2fr;
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 2fr;
 }
-
-.child{
-	width: 81px;
-	height: 81px;
-	background-color: yellow;
-	border: 2px solid black;
-	font-size: 25px;
-}
-.child1{
-	width: 82.1px;
-	height: 82.1px;
-	background-color: yellow;
-	border: 2px solid black;
-	font-size: 25px;
+.parent4{
+	position: relative;
+	width: 100%;
+	height: 12%;
+	left: 10%;
+	/* background-color: orange; */
+	display: grid;
+	grid-template-rows: 1fr 1fr;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 9fr;
 }
 .other_nonmetals{
 	width: 81px;
@@ -87,7 +82,7 @@ body{
 	border: 2px solid black;
 	font-size: 25px;
 }
-.rare_elements{
+.lanthanoid{
 	width: 81px;
 	height: 81px;
 	background-color: #E7ED9B;
