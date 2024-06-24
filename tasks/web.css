@@ -56,6 +56,9 @@ margin: 0;
 	margin: 3.5%;
 	font-family: 'Roboto',sans-serif;
 }
+.nav:hover{
+	cursor: pointer;
+}
 .profile{
 	width: 20%;
 	height: 100%;
@@ -63,6 +66,12 @@ margin: 0;
 	justify-content: flex-end; */
 	position: relative;
 	/* background-color: black; */
+}
+select{
+	border: none;
+	outline: none;
+	background-color: #70BBBA;
+	color: white;
 }
 /* .profile:hover{
 	cursor: pointer;
@@ -82,6 +91,7 @@ margin: 0;
 }
 .login:hover{
 	cursor: pointer;
+	transform: scale(1.1);
 }
 .quote{
 	top: 25%;
@@ -118,7 +128,7 @@ margin: 0;
 	top: 30%;
 }
 button{
-	width: 20%;
+	width: 18%;
 	height: 85%;
 	top: 8%;
 	right: 10px;
@@ -128,12 +138,16 @@ button{
 	text-align: center;
 	align-content: center;
 	color: white;
-	font-size: 30px;
+	font-size: 25px;
 	outline: none;
 	border: none;
 }
 button:hover{
 	cursor: pointer;
+	background-color: white;
+	color: #82CFC7;
+	border: 2px solid #82CFC7;
+	/* transform: scale(1.1); */
 }
 .parent2{
 	width: 100%;
@@ -154,6 +168,10 @@ button:hover{
 	left: 13%;
 	font-family: 'roboto', sans-serif;
 	padding: 2%;
+	transition: transform .27s;
+}
+.web_design:hover{
+	transform: scale(1.1);
 }
 .strip1{
 	height: 30px;
@@ -178,7 +196,7 @@ button:hover{
 	/* background-color: black; */
 }
 input,input::placeholder {
-    font: 1.35rem/3 sans-serif;
+    font: 1.35rem sans-serif;
 	background-color: transparent;
 	border: none;
 	outline: none;
@@ -208,11 +226,15 @@ input,input::placeholder {
 	top: -25%;
 	right: 10%;
 	background-image: url(https://www.exactsales.com.br/wp-content/uploads/elementor/thumbs/post_blog_analise_concorrencia-qfidqoit7t1rpu37yutsn5fyvppgtiggxw47fupfwk.webp);
-	background-size: cover;
+	background-size: 100% 100%;
 	color: white;
 	font-family: 'roboto', sans-serif;
 	padding: 2%;
+	transition: transform .2s;
 	/* background-repeat: no-repeat; */
+}
+.finance:hover{
+	transform: scale(1.1);
 }
 .strip2{
 	height: 30px;
@@ -248,8 +270,11 @@ input,input::placeholder {
 	top: 45%;
 	text-align: center;
 	align-content: center;
-	font-size: 140%;
+	font-size: 125%;
 	border-radius: 50px;
+}
+.learn:hover{
+	cursor: pointer;
 }
 .share{
 	height: 25%;
@@ -274,6 +299,9 @@ input,input::placeholder {
 	font-size: 20px;
 	border-radius: 50%;
 }
+#x:hover{
+	cursor: pointer;
+}
 #fb{
 	height: 40px;
 	width: 40px;
@@ -285,6 +313,9 @@ input,input::placeholder {
 	text-align: center;
 	font-size: 20px;
 	border-radius: 50%;
+}
+#fb:hover{
+	cursor: pointer;
 }
 #pin{
 	height: 40px;
@@ -298,6 +329,9 @@ input,input::placeholder {
 	font-size: 20px;
 	border-radius: 50%;
 }
+#pin:hover{
+	cursor: pointer;
+}
 #save{
 	height: 40px;
 	width: 40px;
@@ -309,4 +343,9 @@ input,input::placeholder {
 	text-align: center;
 	font-size: 20px;
 	border-radius: 50%;
+	transition: transform .2s;
+}
+#save:hover{
+	transform: scale(1.2);
+	color: #7FD1C9;
 }

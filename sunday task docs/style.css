@@ -1,0 +1,135 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+.header{
+	font-family: 'maven pro', sans-serif;
+	width: 90%;
+	height: 50px;
+	position: relative;
+	color: #D2D2D2;
+	/* background-color: black; */
+	align-content: center;
+	padding-left: 10%;
+	font-size: 30px;
+}
+.menu{
+	position: absolute;
+	width: 10%;
+	height: 100%;
+	/* background-color: pink; */
+	top: 0;
+	right: 0;
+	color: #2955BD;
+	align-content: center;
+}
+.image{
+	width: 100%;
+	height: 118svh;
+	background-image: url("./business-accessories-objects-top-view_1150-7574-transformed.jpeg");
+	background-size: 100% 100%;
+	position: relative;
+}
+.task{
+	position: absolute;
+	width: 40%;
+	height: 60%;
+	/* background-color: black; */
+	bottom: 5%;
+	right: 5%;
+}
+.bar1{
+	height: 45%;
+	width: 40%;
+	position: absolute;
+	/* margin-bottom: 20%; */
+	top: 0;
+	left: 0;
+	background-color: white;
+	border-radius: 20px;
+	display: flex;
+	justify-content: center;
+}
+.bar2{
+	height: 45%;
+	width: 40%;
+	position: absolute;
+	/* margin-bottom: 20%; */
+	top: 0;
+	right: 10%;
+	background-color: white;
+	border-radius: 20px;
+	display: flex;
+	justify-content: center;
+}
+.bar3{
+	height: 45%;
+	width: 40%;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background-color: white;
+	border-radius: 20px;
+	display: flex;
+	justify-content: center;
+
+}
+.bar4{
+	height: 45%;
+	width: 40%;
+	position: absolute;
+	margin-left: 10%;
+	bottom: 0;
+	right: 10%;
+	background-color: white;
+	border-radius: 20px;
+	display: flex;
+	justify-content: center;
+}
+.img_back1{
+	position: absolute;
+	height: 41%;
+	width: 41%;
+	top: 20%;
+	background-color: #E5E5E5;
+	border-radius: 50%;
+	text-align: center;
+	align-content: center;
+
+}
+.img_back2{
+	position: absolute;
+	height: 41%;
+	width: 41%;
+	top: 20%;
+	background-color: #E5E5E5;
+	border-radius: 50%;
+	text-align: center;
+	align-content: center;
+	background-image: url(./noun-graphic-design-4869319.png);
+	background-size: contain;
+	/* font-size: 200%; */
+}
+.img_back3{
+	position: absolute;
+	height: 41%;
+	width: 41%;
+	top: 20%;
+	background-color: #E5E5E5;
+	border-radius: 50%;
+	text-align: center;
+	align-content: center;
+
+
+}
+.img_back4{
+	position: absolute;
+	height: 41%;
+	width: 41%;
+	top: 20%;
+	background-color: #E5E5E5;
+	border-radius: 50%;
+	text-align: center;
+	align-content: center;
+	/* font-size: 200%; */
+}
