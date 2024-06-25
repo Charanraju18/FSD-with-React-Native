@@ -1,0 +1,218 @@
+/* body{
+	width: 100%;
+	height: 100svh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	perspective: 40px;
+	position: relative;
+}
+.box{
+	width: 250px;
+	height: 240px;
+	background-color: black;
+	perspective: 40px;
+	perspective-origin: right;
+}
+.right{
+	position: absolute;
+	width: 140px;
+	height: 290px;
+	background-color: ;
+	transform: rotateY(-9.2deg);
+	left: 60%;
+	top: 28.5%;
+	border: 2px solid black;
+}
+.left{
+	position: absolute;
+	width: 125px;
+	height: 295px;
+	background-color: pink;
+	transform: rotateY(10deg);
+	left: 34%;
+	top: 28.5%;
+	border: 2px solid black;
+}
+.top{
+	position: absolute;
+	width: 310px;
+	height: 107px;
+	background-color: brown;
+	transform: rotateX(25deg);
+	perspective-origin: bottom;
+	left: 40.8%;
+	top: 22.5%;
+	border: 2px solid black;
+}
+.bottom{
+	position: absolute;
+	width: 335px;
+	height: 90px;
+	background-color: brown;
+	transform: rotatex(152deg);
+	perspective-origin: bottom;
+	left: 40.1%;
+	bottom: 24%;
+	border: 2px solid black;
+
+} */
+/* body{
+	width: 100%;
+	height: 100svh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+.parent1{
+	width:300px;
+	height:300px;
+	border:1px solid black;
+	background-color: transparent;
+	position: absolute;
+	perspective: 100px;
+	perspective-origin: bottom;
+	left: 42.1875%;
+}
+.parent2{
+	width:300px;
+	height:300px;
+	border:1px solid black;
+	background-color: transparent;
+	position: absolute;
+	perspective: 100px;
+	perspective-origin: left;
+	left: 42.1875%;
+}
+.parent3{
+	width:300px;
+	height:300px;
+	border:1px solid black;
+	background-color: transparent;
+	position: absolute;
+	perspective: 100px;
+	perspective-origin: top;
+	left: 42.1875%;
+}
+.parent4{
+	width:300px;
+	height:300px;
+	border:1px solid black;
+	background-color: transparent;
+	position: absolute;
+	perspective: 100px;
+	perspective-origin: right;
+	left: 42.1875%;
+	z-index: 100;
+}
+.top{
+	transform-style: preserve-3d;
+	position: absolute;
+	width: 300px;
+	height: 250px;
+	border: 1px solid black;
+	background-color: rgb(193, 116, 196);
+	background-color: transparent;
+	transform: rotateX(-140deg);
+}
+.bottom{
+	transform-style: preserve-3d;
+	position: absolute;
+	width: 300px;
+	height: 550px;
+	border: 1px solid black;
+	background-color: rgb(7, 134, 189);
+	background-color: transparent;
+	transform: rotateX(150deg);
+	z-index: 100;
+}
+.right{
+	position:absolute;
+	width:500px;
+	height:300px;
+	border:1px solid black;
+	background-color: rgb(213, 131, 144);
+	transform-style: preserve-3d;
+	transform: rotateY(29deg);
+}
+.left{
+	position:absolute;
+	width:500px;
+	height:350px;
+	border:1px solid black;
+	background-color:rgb(237, 140, 243);
+	background-color: transparent;
+	transform-style: preserve-3d;
+	transform: rotateY(90deg);
+} */
+/* .bottom{
+	position:absolute;
+	width:300px;
+	height:300px;
+	border:1px solid black;
+	background-color: green;
+	transform-style: preserve-3d;
+	transform: rotateX(45deg);
+	font-size: 32px;
+} */
+.top{
+	width: 100%;
+	height: 33.33svh;
+	display: flex;
+	justify-content: center;
+	align-items: end;
+}
+.parent1{
+	width: 200px;
+	height: 200px;
+	background-color: black;
+	perspective-origin: bottom;
+	perspective: 100px;
+}
+.middle{
+	width: 100%;
+	height: 33.33svh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.bottom{
+	width: 100%;
+	height: 33.33svh;
+	display: flex;
+	justify-content: center;
+	/* align-items: center; */
+}
+.parent2{
+	width: 200px;
+	height: 200px;
+	background-color: black;
+	perspective-origin: left;
+	perspective: ;
+}
+.parent3{
+	width: 200px;
+	height: 200px;
+	background-color: white;
+}
+.parent4{
+	width: 200px;
+	height: 200px;
+	background-color: black;
+	perspective-origin: right;
+	perspective: ;
+}
+.parent5{
+	width: 200px;
+	height: 200px;
+	background-color: black;
+	perspective-origin: bottom;
+	perspective: ;
+}
+.top_{
+	width: 200px;
+	height: 200px;
+	background-color: pink;
+	transform: rotateY(70deg);
+}
