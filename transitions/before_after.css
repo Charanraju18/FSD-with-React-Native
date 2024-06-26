@@ -1,0 +1,36 @@
+body{
+	width: 100%;
+	height: 100svh;
+}
+.parent{
+	width: 200px;
+	height: 100px;
+	background-color: aqua;
+	border-radius: 50px;
+	position: relative;
+	font-size: 30px;
+}
+.parent:hover{
+	background-color: rgb(137, 80, 80);
+	color: aqua;
+}
+.parent:hover::before{
+
+	background-color: red;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+.parent::before{
+	content: "Click Me Too";
+	background-color: blue;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 250px;
+	border-radius: 50px;
+	text-align: center;
+	align-content: center;
+	border: 2px solid black;
+}
