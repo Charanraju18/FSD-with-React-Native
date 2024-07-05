@@ -5,17 +5,24 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Survey Form</title>
 	<script src="survey_form.js"></script>
-	<link rel="stylesheet" href="./survey_form.css">
+	<!-- <link rel="stylesheet" href="./survey_form.css"> -->
 </head>
 <body>
-	<div class="parent">
-		<div class="form">
-			<input onchange="fun(event)" placeholder="Name" class="input_form"><br><br>
-			<input onchange="fun(event)" placeholder="Age" class="input_form"><br><br>
-			<input onchange="fun(event)" placeholder="Roll_ID" class="input_form"><br><br>
-			<input onchange="fun(event)" placeholder="Branch" class="input_form"><br><br>
-			<input onchange="fun(event)" placeholder="College" class="input_form"><br><br>
-		</div>
-	</div>
+	<label>First Name :</label>
+	<input type="text" value="" placeholder="Enter your First Name" onchange="first_name(event)">
+	<br>
+	<label>Last Name :</label>
+	<input type="text" placeholder="Enter your Last Name" onchange="last_name(event)">
+	<br>
+	<label>Mobile Number :</label>
+	<input type="number" placeholder="Enter your Mobile Number" onchange="mobile_number(event)">
+	<br>
+	<select onchange="college(event)">
+		<option>AEC</option>
+		<option>ACET</option>
+		<option>ACOE</option>
+	</select>
+	<br>
+	<button onclick="btn(event)">Submit Data</button>
 </body>
 </html>
