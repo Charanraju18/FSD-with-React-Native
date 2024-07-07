@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Personal Details</title>
+	<script src="./java_script.js"></script>
+	<link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+	<div class="parent">
+		<div class="personal_details">
+			<h2 class="heading">Personal Details</h2><br><br>
+			<div class="details">
+				<label>First Name</label><span class="colon" style="margin-left: 23px;">:</span><input type="text" name="firstName" onchange="first_name(event)" class="input_field"><br>
+				<label>Last Name</label><span class="colon" style="margin-left: 24px;">:</span><input type="text" name="secondName"onchange="first_name(event)" class="input_field"><br>
+				<label>DOB & Age</label><span class="colon" style="margin-left: 20px;">:</span><input type="date" name="DOB" onchange="first_name(event)" class="input_field"><br>
+				<label>Father Name</label><span class="colon" style="margin-left: 8.5px;">:</span><input type="text" name="father_Name" onchange="first_name(event)" class="input_field"><br>
+				<label>Mother Name</label><span class="colon" style="margin-left: 5px;">:</span><input type="text" name="mother_Name" onchange="first_name(event)" class="input_field"><br>
+				<label>Address</label><span class="colon" style="margin-left: 43px;">:</span><input type="text" name="address" onchange="first_name(event)" class="input_field"><br>
+				<label style="margin-left: -235px;">Gender</label><span class="colon" style="margin-left: 49px;">:</span>
+				<select class="gender" style="margin-left: 15px;">
+					<option name="gender" onchange="first_name(event)">Male</option>
+					<option name="gender" onchange="first_name(event)">Female</option>
+					<option name="gender" onchange="first_name(event)">Others</option>
+				</select>
+				<br>
+				<label style="margin-left: -195px;">Certifications</label><span class="colon" style="margin-left: 10px;">:</span>
+				<label style="margin-left: 18px;">C</label><input type="checkbox" name="certification" onchange="first_name(event)" class="checkbox" style="margin-left: 80px;"><br>
+				<label style="margin-left: -65px;">C++</label><input type="checkbox" name="certification" onchange="first_name(event)" class="checkbox" style="margin-left: 61px;"><br>
+				<label style="margin-left: -65px;">Python</label><input type="checkbox" name="certification" onchange="first_name(event)" class="checkbox" style="margin-left: 42px;"><br>
+				<label style="margin-left: -65px;">Java</label><input type="checkbox" name="certification" onchange="first_name(event)" class="checkbox" style="margin-left: 58px;"><br>
+				<label style="margin-left: -65px;">JavaScript</label><input type="checkbox" name="certification" onchange="first_name(event)" class="checkbox" style="margin-left: 18px;">
+			</div>
+		</div>
+
+		<div class="academic_details">
+			<h2 class="academic_heading">Academic Details</h2>
+			<table border="2px solid black" class="table">
+				<tr>
+					<th>Study</th>
+					<th>Year of pass</th>
+					<th>Percentage</th>
+					<th>Location</th>
+				</tr>
+				<tr>
+					<th>SSC</th>
+					<td><input type="text" class="table_input" name="scc_yop" onchange="first_name(event)"></td>
+					<td><input type="text" class="table_input" name="ssc_percentage" onchange="first_name(event)"></td>
+					<td><input type="text" class="table_input" name="ssc_location" onchange="first_name(event)"></td>
+				</tr>
+				<tr>
+					<th>Inter</th>
+					<td><input type="text" class="table_input" name="inter_yop" onchange="first_name(event)"></td>
+					<td><input type="text" class="table_input" name="inter_percentage" onchange="first_name(event)"></td>
+					<td><input type="text" class="table_input" name="inter_location" onchange="first_name(event)"></td>
+				</tr>
+				<tr>
+					<th>B.tech</th>
+					<td><input type="text" class="table_input" name="btech_yop" onchange="first_name(event)"></td>
+					<td><input type="text" class="table_input" name="btech_percentage" onchange="first_name(event)"></td>
+					<td><input type="text" class="table_input" name="btech_location" onchange="first_name(event)"></td>
+				</tr>
+			</table><br>
+			<label>Skills</label><span class="colon" style="margin-left: 75px;">:</span><input type="text" name="skills" onchange="first_name(event)" class="input_field"><br>
+			<label>Hobbies</label><span class="colon" style="margin-left: 54px;">:</span><input type="text" name="description" onchange="first_name(event)" class="input_field"><br>
+			<label>Profile Picture</label><span class="colon" style="margin-left: 14px;">:</span><input type="file" name="profile" onchange="first_name(event)" class="input_field"><br>
+			<button onclick="fun(event)">Submit Data</button>
+		</div>
+
+	</div>
+</body>
+</html>
