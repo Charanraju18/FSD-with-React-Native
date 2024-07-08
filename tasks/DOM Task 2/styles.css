@@ -51,3 +51,13 @@ td{
 	border-radius: 15px;
 	border: 2px solid black;
 }
+
+.piece_class{
+	width: 40px;
+	height: 40px;
+	background-color: black;
+	transition: transform .2s;
+}
+/* .piece_class{
+
+} */

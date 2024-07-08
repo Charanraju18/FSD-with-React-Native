@@ -66,8 +66,10 @@ btn4.innerHTML = "RIGHT";
 btn_div.append(btn1,btn2,btn3,btn4);
 
 var piece = Table.rows[0].cells[0];
+// piece.classList.add("piece_class");
 console.log(piece);
 var chess_piece = document.createElement("i");
+chess_piece.classList.add("piece_class");
 chess_piece.setAttribute("class","fa-solid fa-crown")
 piece.appendChild(chess_piece);
 
