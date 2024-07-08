@@ -3,11 +3,11 @@ function fun(){
 	display_table();
 	change_text();
 	// take_input();
-	var clickCounter=0;
-	var button1 = document.getElementById('add_btn')
-	button1.onclick=function() {
-		clickCounter++;
-		if (clickCounter>=1) {
+	var c=0;
+	var add1 = document.getElementById('add_btn')
+	add1.onclick=function() {
+		c++;
+		if (c>=1) {
 			take_input();
 		}
 	};
@@ -19,6 +19,7 @@ function change_text(){
 	document.getElementById("add_btn").innerHTML="Add Data";
 }
 function take_input(){
+	
 	// let sec = prompt("section");
 	let name = prompt("Enter Name :");
 	let roll = prompt("Enter roll id :");
@@ -38,11 +39,11 @@ function take_input(){
 
 	console.log();
 }
-function Update_html_Data(button){
+function Update_html_Data(){
 	// let btn = document.getElementById("update_btn");
-	if(document.getElementById("html_update")){
-	var btn = document.getElementById("html_update");
-	}
+	// if(document.getElementById("html_update")){
+	let btn = document.getElementById("html_update");
+	// }
 	let row = btn.parentNode.parentNode;
 	// let secCell = row.cells[0];
 	let nameCell = row.cells[0];
