@@ -1,9 +1,11 @@
 function fun(){
 	// document.getElementById("add_btn").innerHTML="Add Data";
-	display_table();
-	change_text();
-	// take_input();
 	var c=0;
+		display_table();
+		change_text();
+
+	//
+
 	var add1 = document.getElementById('add_btn')
 	add1.onclick=function() {
 		c++;
@@ -19,7 +21,7 @@ function change_text(){
 	document.getElementById("add_btn").innerHTML="Add Data";
 }
 function take_input(){
-	
+
 	// let sec = prompt("section");
 	let name = prompt("Enter Name :");
 	let roll = prompt("Enter roll id :");
