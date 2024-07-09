@@ -19,7 +19,7 @@ td{
 	width: 40px;
 	height: 40px;
 	text-align: center;
-	/* font-size: 20px; */
+	font-size: 20px;
 }
 .back_div{
 	margin-top: 50px;
@@ -27,23 +27,20 @@ td{
 	height: fit-content;
 	display: flex;
 	justify-content: center;
-	/* background-color: pink; */
 }
 
 .btn_div{
 	width: 100%;
-	height: 100px;
-	/* background-color: black; */
+	height: 150px;
 	display: flex;
-	justify-content: center;
-	align-items: flex-end;
+	flex-direction: column;
 }
 
 .up_btn,
 .down_btn,
 .left_btn,
 .right_btn{
-	margin: 20px;
+	/* margin: 20px; */
 	width: 75px;
 	height: 30px;
 	background: linear-gradient(to left,#0077b6,#caf0f8);
@@ -52,12 +49,24 @@ td{
 	border: 2px solid black;
 }
 
+.left_btn,
+.right_btn{
+	margin: 50px;
+}
+
 .piece_class{
 	width: 40px;
 	height: 40px;
 	background-color: black;
 	transition: transform .2s;
 }
-/* .piece_class{
 
-} */
+.up_btn_div,
+.lr_btn_div,
+.down_btn_div{
+	width: 100%;
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
