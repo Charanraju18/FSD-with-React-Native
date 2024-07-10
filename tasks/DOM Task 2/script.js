@@ -25,6 +25,10 @@ for (let i = 0; i < ind; i++) {
   var Table_Row = document.createElement("tr");
   for (let j = 0; j < ind; j++) {
     var Table_Data = document.createElement("td");
+    var i_index = i;
+    var j_index = j;
+    Table_Data.setAttribute("onclick",`return_pos(${i_index},${j_index})`);
+
     if(ind%2!=0){
       if((i%2==0 && j%2==0) || (i==j) || (i+j==ind-1) || (i%2!==0 && j%2!=0)){
         Table_Data.setAttribute("style","background-color:black");
@@ -47,11 +51,7 @@ for (let i = 0; i < ind; i++) {
   Table.appendChild(Table_Row);
 }
 
-// for(let i=0;i<ind;i++){
-//   for(let j=0;j<ind;j++){
 
-//   }
-// }
 // inserting table into  div and div to body
 div1.appendChild(Table);
 document.body.appendChild(div1);
@@ -106,14 +106,63 @@ btn4.innerHTML = "RIGHT";
 lr_btn_div.appendChild(btn3);
 lr_btn_div.appendChild(btn4);
 
+// king piece and its row and column
 var piece = Table.rows[0].cells[0];
-console.log(piece);
 var chess_piece = document.createElement("i");
 chess_piece.classList.add("piece_class");
 chess_piece.setAttribute("class","fa-solid fa-crown")
 chess_piece.setAttribute("style","color: #ffffff;")
 piece.appendChild(chess_piece);
 
+
+// Function to generate random number
+function randomNumber(min, max) {
+  return Math.random() * (max - min) + min;
+}
+
+let random_i = ( Math.ceil(randomNumber(0, ind-1)) );
+let random_j = ( Math.ceil(randomNumber(0, ind-1)) );
+console.log(random_i,random_j);
+
+// pawn piece and its row and column
+var pawn_piece = Table.rows[random_i].cells[random_j];
+var pawn = document.createElement("i");
+pawn.classList.add("piece_class");
+pawn.setAttribute("class","fa-solid fa-chess-pawn")
+pawn.setAttribute("style","color: #ffffff;")
+pawn_piece.appendChild(pawn);
+
+var prev_pos_x = 0;
+var prev_pos_y = 0;
+
+function return_pos(x,y){
+  // this code gives the position of current index values to per_pos values
+  prev_pos_x = pos.x;
+  prev_pos_y = pos.y;
+
+  // if the td that we click and the random values are equal the king piece goes to random value and pawn goes to
+  // prev_value and we update the random value with prev_value that the is on.
+  if(x==random_i && y==random_j){
+    piece = Table.rows[x].cells[y];
+    piece.appendChild(chess_piece);
+    pawn_piece = Table.rows[prev_pos_x].cells[prev_pos_y];
+    pawn_piece.appendChild(pawn);
+    random_i=prev_pos_x;
+    random_j=prev_pos_y;
+    console.log(random_i,random_j);
+    pos.x = x;
+    pos.y = y;
+  }
+
+  // else we just place the king piece normally
+  else{
+    piece = Table.rows[x].cells[y];
+    piece.appendChild(chess_piece);
+    pos.x = x;
+    pos.y = y;
+  }
+
+}
 
 var pos = {
   x:0,
@@ -124,13 +173,39 @@ var pos = {
 function up_fun(){
   if(pos.x==0){
     pos.x=ind-1;
-    piece = Table.rows[pos.x].cells[pos.y];
+    if(pos.x==random_i && pos.y==random_j){
+      piece = Table.rows[pos.x].cells[pos.y];
+      if(pos.x==ind-1){
+        pawn_piece = Table.rows[pos.x-ind-1].cells[pos.y];
+        random_i=pos.x-ind-1;
+      }
+      else{
+        console.log(pos.x,pos.y)
+        pawn_piece = Table.rows[pos.x+1].cells[pos.y];
+        random_i=pos.x+1;
+      }
+    }
+    else if(pos.x==0 && random_i==ind-1){
+      pawn_piece = Table.rows[0].cells[pos.y];
+      piece = Table.rows[pos.x].cells[pos.y];
+    }
+    else{
+      piece = Table.rows[pos.x].cells[pos.y];
+    }
   }
   else{
     (pos.x)-=1;
-    piece = Table.rows[pos.x].cells[pos.y];
+    if(pos.x==random_i && pos.y==random_j){
+      piece = Table.rows[pos.x].cells[pos.y];
+      pawn_piece = Table.rows[pos.x+1].cells[pos.y];
+      random_i=pos.x+1;
+    }
+    else{
+      piece = Table.rows[pos.x].cells[pos.y];
+    }
   }
   piece.appendChild(chess_piece);
+  pawn_piece.appendChild(pawn);
 }
 
 // button down_function
@@ -144,7 +219,6 @@ function down_fun(){
     piece = Table.rows[pos.x].cells[pos.y];
   }
   piece.appendChild(chess_piece);
-
 }
 
 // button left_function

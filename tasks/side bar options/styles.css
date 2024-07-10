@@ -32,10 +32,10 @@ hr{
 	cursor: pointer;
 	transform: scale(1.1);
 }
-button{
+/* button{
 	background-color: white;
 	border: none;
-}
+} */
 i{
 	font-size: 20px;
 	cursor: pointer;
