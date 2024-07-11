@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>slick scroll</title>
+    <link
+      rel="stylesheet"
+      href="../../slick-1.8.1/slick-1.8.1/slick/slick.css"
+    />
+	<link rel="stylesheet" href="slick_scroll.css" />
+  </head>
+  <body>
+	<script src="../jquery.min.js"></script>
+	<script src="../slick-1.8.1/slick-1.8.1/slick/slick.min.js"></script>
+    <div class="parent">
+      <div class="child">
+		<div class="inner_child">
+		</div>
+	  </div>
+      <div class="child">
+		<div class="inner_child">
+		</div>
+	  </div>
+      <div class="child">
+		<div class="inner_child">
+		</div>
+	  </div>
+      <div class="child">
+		<div class="inner_child">
+		</div>
+	  </div>
+      <div class="child">
+		<div class="inner_child">
+		</div>
+	  </div>
+      <div class="child">
+		<div class="inner_child">
+		</div>
+	  </div>
+    </div>
+    <script>
+      $(".parent").slick({
+		centerMode:true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+		dots:true,
+		prevArrow:`<button class="prev_button"><</button>`,
+		nextArrow:`<button class="next_button">></button>`	
+      });
+    </script>
+  </body>
+</html>
