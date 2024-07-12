@@ -100,3 +100,4 @@ function DeleteRow(button) {
 	let row = button.parentNode.parentNode;
 	row.parentNode.removeChild(row);
 }
+
