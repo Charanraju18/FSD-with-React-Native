@@ -1,0 +1,440 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto',sans-serif;
+}body{
+	width: 100%;
+	height: 300svh;
+	min-width: 320px;
+}
+.first_division{
+	width: 100%;
+	height: 95svh;
+	background-color: #654AFF;
+}
+.first_div_heading{
+	box-sizing: border-box;
+	padding-top: 10svh;
+	width: 100%;
+	height: 20svh;
+}
+.first_div_heading h1{
+	font-weight: 100;
+	text-align: center;
+}
+.first_div_heading p{
+	text-align: center;
+	padding-top: 10px;
+}
+.benefits_card_div{
+	width: 100%;
+	height: 85svh;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	box-sizing: border-box;
+	flex-wrap: wrap;
+}
+.card{
+	width: 300px;
+	height: 375px;
+	background-color: white;
+	border-radius: 15px;
+	display: flex;
+	justify-content: center;
+	position: relative;
+	margin-bottom: 5svh;
+	margin: 0 10px;
+}
+.img_icon{
+	position: absolute;
+	top: -37.5px;
+	width: 75px;
+	height: 75px;
+	background-color: black;
+	border-radius: 50%;
+	background-color: #F0EDFF;
+	background-repeat: no-repeat;
+	background-size: 50% 50%;
+	display: flex;
+  	justify-content: center;
+  	align-items: center;
+}
+.matter{
+	width: 80%;
+	height: 80%;
+	text-align: center;
+	color: #654AFF;
+	position: absolute;
+	bottom: 1svh;
+}
+
+.matter p{
+	color: black;
+	opacity: .75;
+	padding-top: 20px;
+	font-size: 18px;
+}
+
+.more_btn{
+	width: 100px;
+	height: 50px;
+	position: absolute;
+	bottom: 5svh;
+	border: 2px solid #654AFF;
+	text-align: center;
+	align-content: center;
+	cursor: pointer;
+}
+@media screen and (min-width:650px) and (max-width:976px){
+	.first_division{
+		height: 160svh;
+	}
+	.benefits_card_div{
+		height: 140svh;
+	}
+	.card1,
+	.card2{
+		margin-top: 40px;
+	}
+	.card3{
+		margin-top: 40px;
+	}
+}
+@media screen and (min-width:500px) and (max-width:660px) {
+	.first_division{
+		height: 200svh;
+	}
+	.benefits_card_div{
+		height: 180svh;
+		flex-direction: column;
+		align-items: center;
+	}
+	.card{
+		width: 275px;
+		height: 345px;
+	}
+	.img_icon{
+		top: -30px;
+		width: 60px;
+		height: 60px;
+	}
+	.matter{
+		width: 90%;
+	}
+	.matter p{
+		color: black;
+		opacity: .75;
+		padding-top: 15px;
+		font-size: 16px;
+	}
+	.matter h3{
+		font-size: 16px;
+	}
+	.more_btn{
+		width: 90px;
+		height: 45px;
+		bottom: 5svh;
+	}
+	.card1{
+		margin-top: 30px;
+	}
+}
+@media screen and (min-width:320px) and (max-width:499px){
+	.first_division{
+		height: 195svh;
+	}
+	.card{
+		width: 240px;
+		height: 280px;
+	}
+	.card1,.card2,.card3{
+		margin-top: 75px;
+	}
+	.matter p{
+		color: black;
+		opacity: .75;
+		padding-top: 15px;
+		font-size: 16px;
+	}
+	.matter h3{
+		font-size: 16px;
+	}
+	.more_btn{
+		width: 80px;
+		height: 40px;
+		bottom: 3svh;
+	}
+}
+@media screen and (min-width:320px) and (max-width:499px){
+	.first_div_heading h1{
+		font-size: 28px;
+	}
+	.first_div_heading p{
+		text-align: center;
+		padding-top: 10px;
+	}
+}
+@media screen and (max-width:319px){
+	.first_div_heading h1{
+		font-size: 26px;
+	}
+	.first_div_heading p{
+		text-align: center;
+		padding-top: 10px;
+	}
+}
+
+
+/* second division  */
+
+.second_division{
+	width: 100%;
+	height: 93svh;
+	display: flex;
+}
+.education{
+	width: 50%;
+	height: 100%;
+	box-sizing: border-box;
+	padding-top: 7%;
+	padding-left: 12%;
+	padding-right: 1%;
+	text-align: justify;
+}
+.education h1{
+	font-size: 38px;
+	font-weight: 500;
+	color: #654AFF;
+	text-align: start;
+}
+.education p{
+	font-size: 18px;
+	margin-top: 20px;
+	line-height: 35px;
+	opacity: .8;
+}
+.health{
+	width: 50%;
+	height: 100%;
+	padding-top: 7%;
+	padding-left: 3%;
+	padding-right: 5%;
+}
+.health h1{
+	font-family: 'Roboto',sans-serif;
+	font-size: 75px;
+	font-weight: 100;
+	color: #654AFF;
+}
+.health P{
+	font-family: sans-serif;
+	font-weight: 600;
+	margin-left: 10px;
+	font-size: 20px;
+	margin-top: 5%;
+}
+.chatnow{
+	width: 200px;
+	height: 50px;
+	display: flex;
+	margin-top: 7%;
+	cursor: pointer;
+}
+.whatsapp_icon{
+	width: 25%;
+	height: 100%;
+	font-size: 50px;
+	text-align: center;
+	align-content: center;
+	top: -2px;
+
+}
+.whatsapp_icon i{
+	padding-bottom: 3px;
+}
+.chat_now{
+	width: 75%;
+	height: 100%;
+	text-align:start;
+	align-content: center;
+	font-weight: 600;
+	font-size: 24px;
+	padding-top: 3px;
+}
+
+@media screen and (min-width:1079px) and (max-width:1150px){
+	.health h1{
+		font-size: 65px;
+	}
+	.education p{
+		font-size: 18px;
+		line-height: 28px;
+	}
+}
+@media screen and (min-width:698px) and (max-width:1078px){
+	.second_division{
+		width: 100%;
+		height: 100svh;
+		display: flex;
+		flex-direction: column;
+	}
+	.education,
+	.health{
+		width: 100%;
+		height: 50%;
+		box-sizing: border-box;
+		padding-top: 5%;
+		padding-left: 12%;
+		padding-right: 1%;
+	}
+	.health h1{
+		font-size: 56px;
+	}
+	.education p{
+		font-size: 18px;
+		line-height: 26px;
+		opacity: .5;
+		padding-right: 5%;
+	}
+}
+@media screen and (min-width:550px) and (max-width:697px){
+	.second_division{
+		width: 100%;
+		height: 110svh;
+		display: flex;
+		flex-direction: column;
+	}
+	.education,
+	.health{
+		width: 100%;
+		height: 50%;
+		box-sizing: border-box;
+		padding-top: 5%;
+		padding-left: 12%;
+		padding-right: 1%;
+	}
+	.health{
+		padding-top: 8%;
+	}
+	.health h1{
+		font-size: 52px;
+	}
+	.education p{
+		font-size: 18px;
+		line-height: 26px;
+		padding-right: 5%;
+	}
+}
+@media screen and (min-width:465px) and (max-width:549px){
+	.second_division{
+		width: 100%;
+		height: 120svh;
+		display: flex;
+		flex-direction: column;
+	}
+	.education,
+	.health{
+		width: 100%;
+		height: 50%;
+		box-sizing: border-box;
+		padding-top: 5%;
+		padding-left: 12%;
+		padding-right: 1%;
+	}
+	.health{
+		padding-top: 10%;
+	}
+	.health h1{
+		font-size: 50px;
+	}
+	.education p{
+		font-size: 18px;
+		line-height: 26px;
+		padding-right: 5%;
+	}
+}
+@media screen and (min-width:390px) and (max-width:464px){
+	.second_division{
+		width: 100%;
+		height: 140svh;
+		display: flex;
+		flex-direction: column;
+	}
+	.education,
+	.health{
+		width: 100%;
+		height: 50%;
+		box-sizing: border-box;
+		padding-top: 5%;
+		padding-left: 12%;
+		padding-right: 1%;
+	}
+	.health{
+		padding-top: 10%;
+	}
+	.health h1{
+		font-size: 50px;
+	}
+	.education p{
+		font-size: 18px;
+		line-height: 26px;
+		padding-right: 5%;
+	}
+}
+@media screen and (min-width:320px) and (max-width:390px){
+	.second_division{
+		width: 100%;
+		height: 140svh;
+		display: flex;
+		flex-direction: column;
+		background-color: pink;
+	}
+	.education{
+		width: 100%;
+		height: 50%;
+		box-sizing: border-box;
+		padding-top: 5%;
+		padding-left: 12%;
+		padding-right: 1%;
+	}
+	.health{
+		position: relative;
+		width: 100%;
+		height: 50%;
+		box-sizing: border-box;
+		bottom: 0;
+		padding-top: 50%;
+		padding-left: 12%;
+		padding-right: 1%;
+	}
+	.health h1{
+		font-size: 40px;
+	}
+	.education p{
+		font-size: 18px;
+		line-height: 26px;
+		padding-right: 5%;
+	}
+	.chat_now{
+		font-size: 18px;
+	}
+	.whatsapp_icon{
+		font-size: 40px;
+	}
+}
+
+
+
+/* third division */
+
+.third_division{
+	width: 100%;
+	height: 50svh;
+	background-color: #654AFF;
+}
+.third_division h1{
+	text-align: center;
+	font-size: 50px;
+
+}
