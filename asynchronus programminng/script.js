@@ -33,38 +33,46 @@
 
 // }
 
-
-
-
-
 var timer;
-var h=0,m=0,s=0;
+var h = 0,
+  m = 0,
+  s = 0,
+  mhr = 0;
 var running = false;
 
-function start(){
-  if(!running){
-    running=true;
-    timer = setInterval(updateTimer,1000);
+function start() {
+  if (!running) {
+    running = true;
+    timer = setInterval(updateTimer, 1);
   }
 }
 
-function updateTimer(){
+function updateTimer() {
   s++;
-  if(s>=60){
+  if (s >= 10) {
     m++;
-    s=0;
-    if(m>=60){
+    s = 0;
+    if (m >= 6) {
       h++;
-      m=0;
+      m = 0;
+	  if(h>=6){
+		mhr++;
+		h=0;
+		if(mhr>=24){
+			mhr=0;
+		}
+	  }
     }
   }
   updateShow();
 }
 
 function updateShow() {
-  document.querySelector('.hours').textContent = h.toString().padStart(2,'0');
-  document.querySelector('.minutes').textContent = m.toString().padStart(2,'0');
-  document.querySelector('.seconds').textContent = s.toString().padStart(2, '0');
+	document.querySelector(".mainhrs").textContent = mhr.toString().padStart(2, "0");
+  document.querySelector(".hours").textContent = h.toString().padStart(2, "0");
+  document.querySelector(".minutes").textContent = m.toString().padStart(2, "0");
+  document.querySelector(".seconds").textContent = s.toString().padStart(2, "0");
+
 }
 
 function stop() {
@@ -75,6 +83,6 @@ function stop() {
 function reset() {
   clearInterval(timer);
   running = false;
-  h=0,m=0,s=0;
+  (h = 0), (m = 0), (s = 0), (mhr=0);
   updateShow();
 }
