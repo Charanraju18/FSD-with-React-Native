@@ -1,0 +1,697 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'kanit';
+}
+body{
+	width: 100%;
+	height: 320svh;
+}
+.first_division{
+	width: 100%;
+	height: 155svh;
+	background-color: #313789;
+	box-sizing: border-box;
+}
+.first_division h1{
+	padding-top: 85px;
+	font-size: 60px;
+	text-align: center;
+}
+.matter1{
+	margin: 50px 17%;
+	font-weight: 800;
+	font-size: 38px;
+	color: white;
+	text-align: center;
+}
+.matter2{
+	margin: 55px 17%;
+	font-family: 'Roboto';
+	font-weight: 300;
+	font-size: 30px;
+	color: white;
+	text-align: center;
+	line-height: 40px;
+}
+.learn_more_btn{
+	box-sizing: content-box;
+	height: 67px;
+	width: 265px;
+	background-color: #F7B7B7;
+	color: #313789;
+	text-align: center;
+	align-content: center;
+	margin-top: 65px;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 50px;
+	font-size: 18px;
+	letter-spacing: 3px;
+}
+
+
+
+/* second division */
+.second_division{
+	width: 100%;
+	height: 200svh;
+	position:relative;
+	background-color: #F7B7B7;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-content: start;
+}
+.training{
+	width: 384px;
+	height: 288px;
+	background-color: white;
+	margin: -180px 15px 205px 15px;
+	border-radius: 20px;
+	box-shadow: 0px 7px 0px -7px black;
+	transition: transform .2s;
+}
+.training:hover{
+	transform: scale(1.1);
+}
+.training h2{
+	text-align: center;
+	color: #666666;
+	margin-top: 14%;
+	font-size: 21px;
+	font-weight: 700;
+	letter-spacing: 2px;
+}
+
+.training .train_text{
+	margin: 22px 50px;
+	text-align: center;
+	font-size: 18px;
+	font-weight: 100;
+	color: #111111;
+	line-height: 28px;
+}
+.training .more_ele{
+	text-align: center;
+	color: #000000;
+	letter-spacing: 2px;
+	line-height: 6px;
+	cursor: pointer;
+	font-size: 14px;
+	text-underline-offset: 6px;
+	text-decoration-thickness: 1px;
+}
+
+
+.what_we_do{
+	width: 80%;
+	height: 101svh;
+	/* background-color: pink; */
+	position: absolute;
+	bottom: 5%;
+	display: flex;
+}
+.dog_img{
+	width: 48%;
+	height: 100%;
+	background: linear-gradient(to top right,#E5B8B5,#F0C7C1,#EEBBB0,#E8BDB6);
+}
+.we_do{
+	width: 52%;
+	height: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	position: relative;
+	transition: transform 1s;
+}
+.our_job{
+	width: 47%;
+	height: 47%;
+	border-radius: 20px;
+	margin-top: 10px;
+	transition: transform 1s;
+}
+.our_job h1{
+	font-size: 22px;
+	margin-left: 35px;
+	margin-top: 60px;
+}
+.our_job .job_text{
+	margin-left: 35px;
+	margin-top: 16px;
+	line-height: 28px;
+	font-size: 18px;
+	margin-right: 35px;
+	text-align: justify;
+}
+.color1{
+	background-color: #313789;
+	color: white;
+}
+.color2{
+	background-color: transparent;
+}
+.view{
+	margin-left: 35px;
+	margin-top: 16px;
+	font-size: 16px;
+	letter-spacing: 1px;
+	text-underline-offset: 8px;
+	text-decoration-thickness: 1px;
+	cursor: pointer;
+	transition: transform .2s;
+}
+.view:hover{
+	transform: scale(1.05);
+}
+.we_do:hover .color1{
+	background-color: transparent;
+	color: black;
+}
+.we_do:hover .color2{
+	background-color: #313789;
+	color: white;
+}
+
+
+
+
+
+
+
+/* praveen's code   */
+
+.praveen {
+	position: relative;
+    background-color: #313789;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+	/* top: 100svh; */
+}
+
+.div1 {
+    width: 85%;
+    height: 100svh;
+    display: flex;
+    flex-direction: column;
+}
+
+.heading1 {
+    width: 85%;
+    height: fit-content;
+    color: white;
+    font-size: 50px;
+    font-weight: 700;
+    text-align: left;
+    font-family: "Roboto", sans-serif;
+    margin-top: 20px;
+	/* background-color: #313789; */
+}
+
+.body1 {
+    width: 100%;
+    height: 100svh;
+    color: white;
+    display: flex;
+    margin-top: 40px;
+    perspective: 1000px;
+}
+
+.flip{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+
+}
+
+.flipping_image {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+	top: -50px;
+	left: -50px;
+}
+
+.flip:hover .flipping_image {
+    transform: rotateY(-180deg);
+}
+
+.image_front,.image_back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.image_back {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotateY(180deg);
+}
+
+.image_front{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image img{
+    height: 80%;
+    width: 90%;
+}
+
+.content1 {
+    width: 85%;
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.content1 i {
+    font-size: 50px;
+    color: white;
+    margin-right: 90%;
+}
+
+.content1 .text1 {
+    font-size: 21px;
+    font-weight: 400;
+    font-family: 'kanit';
+    color: white;
+    font-weight: 300;
+    text-align: left;
+    margin-top: 10%;
+    line-height: 30px;
+}
+
+.content1 .text2 {
+    font-size: 14px;
+    font-weight: bold;
+    font-family: "Roboto", sans-serif;
+    color: white;
+    margin-top: 5%;
+}
+
+.div2 {
+    height: 100svh;
+    width: 90%;
+    display: flex;
+}
+
+.four {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+}
+
+.images {
+    border: 2px solid transparent;
+    height: 275px;
+    width: 500px;
+    border-radius: 5px;
+    margin: 15px;
+}
+
+.images img {
+    height: 100%;
+    width: 60%;
+    border-radius: 5px;
+}
+
+.facts {
+    height: 300px;
+    width: 350px;
+    border-radius: 20px;
+    background-color: white;
+    position: absolute;
+    opacity: .9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+	margin: auto;
+	align-self: center;
+}
+
+.heading2 {
+    font-size: 32px;
+    font-weight: bold;
+    font-family: "Roboto", sans-serif;
+    margin-top: 5%;
+}
+
+.text3 {
+    width: 80%;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Roboto", sans-serif;
+    margin-top: 5%;
+    text-align: center;
+    line-height: 25px;
+}
+
+.button1 {
+    width: 150px;
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 50px;
+    color: black;
+    font-size: 15px;
+    font-weight: 100;
+    font-family: "Roboto", sans-serif;
+    margin-top: 5%;
+    text-align: center;
+    line-height: 50px;
+}
+
+.div3 {
+    width: 75%;
+    height: 80svh;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+}
+
+.left{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.points{
+    width: 425px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    border: 1px solid pink;
+    border-radius: 20px;
+    margin-top: 5%;
+}
+
+.right{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image2{
+    height: 82%;
+    width: 80%;
+    border-radius: 20px;
+    background-color: #F0B1C4;
+    margin-top: 5%;
+}
+
+.right img{
+    height: 100%;
+    width: 100%;
+}
+
+.logo{
+    width: 10px;
+    height: 100px;
+    font-size: 38px;
+    display: flex;
+    align-items: center;
+    margin-left: 5%;
+}
+
+.small_heading{
+    font-size: 16px;
+    font-weight: bold;
+    font-family: "Roboto", sans-serif;
+    margin-left: 15%;
+}
+
+.text4{
+    font-size: 14px;
+    font-weight: 400;
+    font-family: "Roboto", sans-serif;
+    margin-top: 5%;
+}
+
+
+
+
+/* sricharan code  */
+
+.nav-bar {
+    height: 100px;
+    width: 100%;
+    display: flex;
+}
+.logo {
+    height: 100%;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+}
+.item:hover {
+    color: blue;
+    cursor: pointer;
+}
+.menu-bar:hover {
+    color: blue;
+}
+.nav-items {
+    height: 100%;
+    width: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+    font-family: "Kanit", sans-serif;
+    font-size: 18px;
+}
+.menu-bar {
+    height: fit-content;
+    width: fit-content;
+    font-size: 24px;
+    display: none;
+}
+
+
+.hero-section {
+    height: 600px;
+    width: 100%;
+    background: linear-gradient(to bottom,#FEC1C8,#FFD2D9);
+    display: flex;
+}
+.content {
+    height: 100%;
+    width: 50%;
+    /* background-color: blue; */
+    display: flex;
+    position: relative;
+}
+.girl {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+.circle {
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    background-color: #F17F7F;
+    border-radius: 100%;
+    top: 12%;
+    left: 20%;
+}
+.heading {
+    position: absolute;
+    right: 30%;
+    line-height: 65px;
+    font-size: 55px;
+    font-family: "Roboto";
+    color: #313789;
+    font-weight: 800;
+    top: 30%;
+    left: 20%;
+
+}
+.matter {
+    position: absolute;
+    top: 65%;
+    left: 20%;
+    right: 15%;
+    font-family: "Kanit", sans-serif;
+    font-size: 18px;
+    line-height: 30px;
+
+}
+.read-more {
+    position: absolute;
+    top: 85%;
+    left: 20%;
+    height: 40px;
+    width: 120px;
+    font-family: "kanit";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F17F7F;
+    color: white;
+    letter-spacing: 1px;
+}
+.Girl-Image {
+    height: 100%;
+    width: 400px;
+}
+
+
+
+
+/* sricharan's code */
+
+.Offer-section {
+    height: 650px;
+    width: 100%;
+    position: relative;
+}
+.showing-image {
+    position: absolute;
+    left: 23%;
+    height: 400px;
+    width: 800px;
+}
+.content-two {
+    position: absolute;
+    left: 26%;
+    top: 50%;
+    height: 300px;
+    width: 600px;
+    background-color: #F7B7B7;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+}
+.heading-two {
+    text-align: center;
+    font-family: "Roboto";
+    font-size: 36px;
+    position: absolute;
+    top: 10%;
+}
+.matter-two {
+    text-align: center;
+    font-size: 18px;
+    font-family: "Kanit";
+    position: absolute;
+    left: 10%;
+    right: 10%;
+    top: 45%;
+    font-weight: 200;
+    color: rgb(59, 53, 53);
+}
+input {
+    width: 60%;
+    height: 10%;
+    padding:5px 12px;
+    border-radius: 18px;
+    border-color: transparent;
+    position: absolute;
+    top: 70%;
+    left: 10%;
+}
+.submit-button {
+    height: fit-content;
+    width: fit-content;
+    padding:10px 20px;
+    background-color: #313789;
+    color: white;
+    border-color: transparent;
+    border-radius: 18px;
+    position: absolute;
+    top: 70%;
+    right: 9%;
+}
+
+.footer {
+    height: 200px;
+    width: 100%;
+    background-color: #313789;
+    font-family: "Kanit";
+    display: flex;
+}
+.footer_div1 {
+    height: 100%;
+    width: 33.3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: "Kanit";
+    gap: 20px;
+}
+
+
+.footer-two {
+    background-color: #313789;
+    height: 70px;
+    width: 100%;
+    position: relative;
+}
+.line {
+    height: 1px;
+    width: 80%;
+    background-color: white;
+    color: white;
+    position: absolute;
+    top: -10px;
+    left: 10%;
+}
+.logo2 {
+    height: fit-content;
+    width: fit-content;
+    font-family: "Kanit";
+    position: relative;
+    top: 10%;
+    left: 10%;
+    font-size: 24px;
+    color: white;
+}
+.icons {
+    height: fit-content;
+    width: fit-content;
+    position: absolute;
+    display: flex;
+    gap: 7px;
+    right: 10%;
+    top: 10%;
+    font-size: 24px;
+}
